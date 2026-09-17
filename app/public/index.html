@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Palm92 MotionGuard AI</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div><span class="brand">PALM92 INTELLIGENCE</span><h1>MotionGuard AI</h1><p>Personalised movement intelligence for safer bodies and safer work.</p></div><div class="status"><span class="dot"></span> SIMULATED SENSOR CONNECTED</div></header>
+<nav><button data-view="dashboard" class="active">Overview</button><button data-view="live">Live Monitor</button><button data-view="baseline">Personal Baseline</button><button data-view="review">Human Review</button><button data-view="evidence">Evidence</button><button data-view="governance">Governance</button></nav>
+<main>
+<section id="dashboard" class="view active">
+<div class="notice"><strong>Decision-support prototype</strong><span>Uses synthetic data. Not a medical diagnosis or substitute for a clinician.</span></div>
+<div class="grid metrics"><article><label>Session risk</label><strong id="riskScore">28</strong><span id="riskLabel">Low attention</span></article><article><label>Baseline coverage</label><strong>14 days</strong><span>Personal reference window</span></article><article><label>Movement events</label><strong id="eventCount">0</strong><span>Current simulated session</span></article><article><label>Human review</label><strong id="pendingCount">0</strong><span>Flags awaiting decision</span></article></div>
+<div class="grid two"><article><h2>Personal movement intelligence</h2><div class="bodymap"><div class="person">◯<br>╱│╲<br>╱ ╲</div><div><h3 id="bodyState">Within personal baseline</h3><p id="bodyExplain">Current movement remains close to the synthetic personal reference range.</p><div class="bar"><i id="exposureBar"></i></div><small>Relative movement exposure</small></div></div></article><article><h2>Latest explainable insight</h2><div id="latestInsight" class="insight"><b>No material deviation detected</b><p>Start the simulation to generate movement observations.</p></div></article></div>
+<article><div class="row"><h2>Movement trend</h2><button id="startBtn" class="primary">Start simulation</button></div><canvas id="chart" width="1000" height="250"></canvas></article>
+</section>
+<section id="live" class="view"><div class="grid two"><article><h2>Live sensor stream</h2><div id="liveMetrics" class="sensorgrid"></div><div class="row"><button id="liveStart" class="primary">Start</button><button id="pauseBtn">Pause</button><button id="resetBtn">Reset</button></div></article><article><h2>Event timeline</h2><div id="timeline" class="timeline"></div></article></div></section>
+<section id="baseline" class="view"><article><h2>Personal baseline</h2><p>MotionGuard compares the current session with the individual's own synthetic 14-day reference profile, not only a generic population threshold.</p><div id="baselineTable"></div></article></section>
+<section id="review" class="view"><article><h2>Human Review Centre</h2><p>Consequential flags remain pending until an authorised human records a decision and rationale.</p><div id="reviewQueue"></div></article></section>
+<section id="evidence" class="view"><article><h2>Evidence & Audit Trail</h2><p>Observation, inference and human judgment are recorded separately.</p><div id="audit"></div></article></section>
+<section id="governance" class="view"><div class="grid two"><article><h2>Governance controls</h2><ul><li>Explicit consent before real-device ingestion</li><li>Data minimisation and purpose limitation</li><li>Role-based human review</li><li>Explainable rule and baseline provenance</li><li>Retention and deletion controls for future real data</li><li>Versioned rules and audit evidence</li></ul></article><article><h2>Non-negotiable limitations</h2><ul><li>No diagnosis of disease, injury or pain source</li><li>No claim that a specific muscle caused pain from sensor data</li><li>No autonomous treatment prescription</li><li>No simulated data represented as clinical evidence</li><li>No claim of clinical validation or regulatory approval</li></ul></article></div></section>
+</main>
+<footer><strong>AI investigates. Humans decide. Evidence proves why.</strong><span>Palm92 Intelligence · MotionGuard AI MVP</span></footer>
+<script src="app.js"></script></body></html>

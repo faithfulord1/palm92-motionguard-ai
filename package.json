@@ -1,0 +1,14 @@
+{
+  "name": "palm92-motionguard-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Explainable, human-governed personalised movement-risk intelligence using synthetic wearable data.",
+  "type": "module",
+  "scripts": {
+    "start": "node app/server.mjs",
+    "check": "node --check app/server.mjs && node --check app/public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
